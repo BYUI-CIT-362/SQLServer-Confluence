@@ -34,10 +34,10 @@ spec:
               key: SA_PASSWORD
         resources:
           limits:
-            cpu: "2"
+            cpu: ".9"
             memory: "2000Mi"
           requests:
-            cpu: "2"
+            cpu: ".9"
             memory: "2000Mi"
         volumeMounts:
         - name: sql-server-confluence-prod
@@ -63,7 +63,7 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 200Gi            
+      storage: 15Gi            
 ---
 apiVersion: v1
 kind: Service
