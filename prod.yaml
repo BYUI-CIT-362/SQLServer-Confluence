@@ -34,11 +34,11 @@ spec:
               key: SA_PASSWORD
         resources:
           limits:
-            cpu: ".9"
-            memory: "6000Mi"
+            cpu: "2"
+            memory: "2000Mi"
           requests:
-            cpu: ".9"
-            memory: "6000Mi"
+            cpu: "2"
+            memory: "2000Mi"
         volumeMounts:
         - name: sql-server-confluence-prod
           mountPath: /var/opt/mssql
